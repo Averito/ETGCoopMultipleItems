@@ -16,14 +16,10 @@
 ---
 
 ## 📥 Установка  
-Планируется опубликовать в thunderstore, а пока:
 
-1. Установите [BepInEx](https://github.com/BepInEx/BepInEx).
-2. Установите [ModTheGungeonAPI](https://github.com/SpecialAPI/ModTheGungeonAPI)
-3. Подключите выше установленные `.dll`.
-4. Соберите проект.
-5. Скопируйте `ETGCoopMultipleItems.dll` в папку `%appdata%\r2modmanPlus-local\ETG\profiles\<Ваш профиль>\BepInEx\plugins\ETGCoopMultipleItems`.
-6. Запустите игру через **r2modman** — мод загрузится автоматически.
+1. Установите `r2modman`.
+2. Выберите игру `Enter the Gungeon`.
+3. Найдите и установите мод `ETGCoopMultipleItems`.
 
 ---
 
