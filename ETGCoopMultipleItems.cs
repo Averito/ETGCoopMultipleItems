@@ -31,11 +31,21 @@ namespace ETGCoopMultipleItems
             }
         }
 
+        private static HashSet<string> clonedContents = new HashSet<string>();
+
+        [HarmonyPatch(typeof(GameManager), "DoGameOver")]
+        public class GameManagerDoGameOverPatch
+        {
+            public static void Postfix(string gameOverSource)
+            {
+                Debug.Log($"[ETGCoopMultipleItems] Clear clonedContents");
+                clonedContents = new HashSet<string>();
+            }
+        }
+
         [HarmonyPatch(typeof(RewardPedestal), "DetermineContents")]
         public class BossPedestalDetermineContentsPatch
         {
-            private static HashSet<string> clonedContents = new HashSet<string>();
-
             public static void Postfix(RewardPedestal __instance)
             {
                 if (__instance == null) return;

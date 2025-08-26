@@ -1,7 +1,7 @@
 {
     "name": "ETGCoopMultipleItems",
     "description": "Doubles items from chests and bosses when playing in local co-op.",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "dependencies": [
         "MtG_API-Mod_the_Gungeon_API-1.9.2",
         "BepInEx-BepInExPack_EtG-5.4.2101"
